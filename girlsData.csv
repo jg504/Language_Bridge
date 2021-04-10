@@ -1,0 +1,113 @@
+Name,ID,Sport,Wins,Losses,Played Professionally,Injury Prone,Popularity
+Mary,1,Badminton,12,17,1,1,9
+Annie,2,Badminton,18,1,1,0,2
+Anna,3,Badminton,16,11,0,0,3
+Margaret,4,Badminton,16,0,0,1,9
+Helen,5,Badminton,1,6,0,0,8
+Elsie,6,Badminton,19,13,0,0,6
+Lucy,7,Badminton,2,16,0,0,6
+Dorothy,8,Badminton,7,4,1,1,1
+Ruth,9,Badminton,16,7,0,1,5
+Elizabeth,10,Badminton,7,5,0,0,4
+Agnes,11,Badminton,1,7,1,0,5
+Louise,12,Badminton,15,15,0,1,2
+Jean,13,Badminton,5,2,0,0,2
+Alice,14,Badminton,19,5,1,0,8
+Esther,15,Badminton,17,6,1,1,2
+Ethel,16,Badminton,7,11,1,0,0
+Marie,17,Badminton,6,18,1,0,9
+Clara,18,Badminton,10,15,1,1,7
+Martha,19,Badminton,9,5,0,1,4
+Frances,20,Badminton,0,17,1,0,0
+Julia,21,Badminton,14,11,1,0,9
+Lillian,22,Badminton,19,7,0,0,6
+Mildred,23,Badminton,12,20,0,0,10
+Pauline,24,Badminton,15,8,1,0,5
+Katherine,25,Badminton,20,6,1,0,10
+Emma,26,Badminton,17,17,1,1,8
+Hazel,27,Badminton,3,20,0,1,8
+Minnie,28,Badminton,5,18,0,0,4
+Daisy,29,Squash,5,10,0,0,0
+Edna,30,Squash,9,18,0,1,2
+Evelyn,31,Squash,5,0,0,0,5
+Florence,32,Squash,6,12,1,0,5
+Sally,33,Squash,11,9,1,1,1
+Olga,34,Squash,6,20,1,0,8
+Edith,35,Squash,3,1,1,1,8
+Maggie,36,Squash,19,19,0,1,5
+Rose,37,Squash,10,20,0,1,6
+Sophie,38,Squash,16,5,0,0,1
+Gertrude,39,Squash,11,18,0,1,6
+Virginia,40,Squash,19,11,0,1,2
+Sarah,41,Squash,2,6,1,0,5
+Stella,42,Squash,4,19,0,0,7
+Vera,43,Squash,5,4,0,1,2
+Betty,44,Squash,12,3,0,1,9
+Irene,45,Squash,1,10,0,1,2
+Barbara,46,Squash,9,9,0,0,0
+Gladys,47,Squash,13,7,0,1,1
+Ann,48,Squash,15,8,0,1,7
+Josephine,49,Squash,16,6,1,1,0
+Kathryn,50,Squash,5,0,0,1,4
+Katie,51,Squash,4,3,0,0,8
+Lorraine,52,Squash,8,15,0,1,1
+Patricia,53,Squash,19,1,1,0,1
+Bessie,54,Squash,20,17,1,0,6
+Joan,55,Squash,0,19,1,0,5
+Thelma,56,Squash,15,1,0,0,9
+Jessie,57,Table Tennis,9,8,1,1,7
+Nellie,58,Table Tennis,0,17,0,0,7
+Ida,59,Table Tennis,11,12,0,0,5
+Marjorie,60,Table Tennis,16,17,1,1,6
+Norma,61,Table Tennis,6,17,0,0,0
+Beatrice,62,Table Tennis,18,12,0,1,4
+Elena,63,Table Tennis,11,13,1,1,5
+Grace,64,Table Tennis,0,1,0,0,2
+Laura,65,Table Tennis,16,2,0,0,0
+Marian,66,Table Tennis,8,6,1,0,6
+June,67,Table Tennis,16,12,1,1,4
+Lena,68,Table Tennis,14,12,0,0,4
+Shirley,69,Table Tennis,2,15,1,0,5
+Mabel,70,Table Tennis,1,11,1,1,6
+Eva,71,Table Tennis,19,1,1,0,9
+Nancy,72,Table Tennis,13,7,0,0,1
+Bertha,73,Table Tennis,15,13,1,0,3
+Doris,74,Table Tennis,16,1,1,0,10
+Dolly,75,Table Tennis,0,12,0,1,2
+Carrie,76,Table Tennis,15,7,1,1,6
+Jane,77,Table Tennis,9,6,0,1,5
+Christine,78,Table Tennis,14,14,1,0,7
+Eleanor,79,Table Tennis,17,12,0,1,6
+Cecelia,80,Table Tennis,20,19,1,0,2
+Lois,81,Table Tennis,17,10,0,1,5
+Janet,82,Table Tennis,3,6,1,0,3
+Maria,83,Table Tennis,19,8,0,1,10
+Arlene,84,Table Tennis,4,4,1,0,8
+Carol,85,Tennis,17,16,0,0,0
+Charlotte,86,Tennis,3,16,1,0,5
+Flora,87,Tennis,9,14,1,0,10
+Wilma,88,Tennis,19,8,1,0,2
+Jacqueline,89,Tennis,13,19,0,1,8
+Nora,90,Tennis,2,13,1,0,2
+Theresa,91,Tennis,20,20,1,0,6
+Amelia,92,Tennis,19,13,1,1,5
+Dolores,93,Tennis,17,18,0,1,10
+Geraldine,94,Tennis,8,12,0,1,5
+Lydia,95,Tennis,2,2,1,1,0
+Donna,96,Tennis,18,9,0,0,7
+Sylvia,97,Tennis,1,10,0,1,7
+Beverly,98,Tennis,17,0,0,1,2
+Bernice,99,Tennis,10,8,1,0,5
+Joyce,100,Tennis,3,1,1,1,9
+Rosemary,101,Tennis,3,0,1,1,5
+Sandra,102,Tennis,3,17,1,1,10
+Karen,103,Tennis,17,3,1,1,8
+Phyllis,104,Tennis,5,8,1,0,0
+Emily,105,Tennis,19,2,1,0,9
+Marilyn,106,Tennis,12,0,1,1,6
+Natalia,107,Tennis,9,6,1,1,10
+Judith,108,Tennis,17,8,0,0,4
+Sharon,109,Tennis,11,5,1,1,9
+Carolyn,110,Tennis,10,13,0,1,7
+Susan,111,Tennis,2,8,1,1,0
+Judy,112,Tennis,15,2,1,0,1
