@@ -1,0 +1,84 @@
+Minutes of meetings
+2 Feb 2021
+Called to order at 2 pm, Delhi
+Present: All
+Absent: None
+Business:
+Made github repo https://github.com/jg504/SPM_Project
+Analysed our strengths and weaknesses
+Agenda for next meeting: Look for more suitable ideas 
+Adjournment: The meeting was adjourned at 5pm
+16 Feb 2021
+Called to order at 3 pm, Delhi
+Present: All
+Absent: None
+Business:
+Shortlisted the following ideas:
+Personality detection using handwriting
+Crawler to look for club relevant events on instagram
+Music player that plays music depending on users moods
+Music player that tunes audio based on user’s hearing ability
+A networking app for foreign language learners 
+Agenda for next meeting: Refining ideas and role division
+Adjournment: The meeting was adjourned at 5:30pm
+
+23 Feb 2021
+Called to order at 1 pm, Delhi
+Present: All
+Absent: None
+Business:
+Finalized idea: Language Bridge
+Created team on Asana
+Agenda for next meeting: Create a timeline and focus on market research
+Adjournment: The meeting was adjourned at 4:30 pm
+
+2 March 2021
+Called to order at 2 pm, Delhi
+Present: All
+Absent: None
+Business: 
+Talked to Mandarin professors an other students who are learning languages
+Created a form for user survey
+Agenda for next meeting: Market research
+Adjournment: The meeting was adjourned at 5pm
+17 March 2021
+Called to order at 9pm, 16 March 2020 in room D022.
+Present: 
+Anusha Dixit, Project Lead
+Jaskaran Gujral, Algo & QA Lead
+Namrata Raina, Developer
+Nikhil Khandelwal, Database Management Lead and Tester
+Absent: None
+ 
+Business:
+Login and sign up
+- Name, username, password
+- Languages known
+- Languages interested in
+- Avatar (optional) ; file retrieval in mysql
+- Age
+- Interests
+Matches based on:
+- Interests
+- Languages
+- Age
+Chatbox:
+- User's name on top that links to their profile
+- Unfriend/Block option
+Menu:
+- Edit Profile
+- Settings
+- Logout
+Agenda for next meeting: Market Research
+Adjournment: The meeting was adjourned at 10pm.
+ 
+20 March 2021
+Called to order at 8 pm, room D022, Shiv Nadar University
+Present: All
+Absent: None
+Business: 
+Inferences from the market survey and user survey
+Switched from app to Website 
+Audio message feature has been put under future scope, will be implemented if time permits
+Agenda for next meeting: Midsem Project presentation 
+Adjournment: The meeting was adjourned at 11 pm
