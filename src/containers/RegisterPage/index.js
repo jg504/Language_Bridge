@@ -78,23 +78,25 @@ const RegisterPage = (props) => {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
             />
-
-            <input 
-              name="knownLanguage"
-              type=""
-              value={knownLanguage}
-              onChange={(e) => setKnownLanguage(e.target.value)}
-              placeholder="Known Language"
-              />
-              
-<select name='option' onChange={(e) => setKnownLanguage(e.target.value)}>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-</select>
+            <label > Known Language: 
+            <select name='knownLanguage' onChange={(e) => setKnownLanguage(e.target.value)}>
             
-
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="french">French</option>
+            <option value="mandarin">Mandarin</option>
+            </select></label>
+            <p></p>
+            <label> Unknown Language: 
+            <select name='unknownLanguage' onChange={(e) => setUnknownLanguage(e.target.value)}>
+            
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="french">French</option>
+            <option value="mandarin">Mandarin</option>
+            </select></label>
+            
+            
             <div>
               <button>Sign up</button>
             </div>
