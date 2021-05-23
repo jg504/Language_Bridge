@@ -17,8 +17,6 @@ const RegisterPage = (props) => {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [knownLanguage, setKnownLanguage] = useState('');
-  const [unknownLanguage, setUnknownLanguage] = useState('');
   const dispatch = useDispatch();
   const auth = useSelector(state => state.auth);
 
@@ -28,7 +26,7 @@ const RegisterPage = (props) => {
     e.preventDefault();
 
     const user = {
-      firstName, lastName, email, password, knownLanguage, unknownLanguage
+      firstName, lastName, email, password
     }
     
     dispatch(signup(user))
@@ -78,25 +76,7 @@ const RegisterPage = (props) => {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
             />
-            <label > Known Language: 
-            <select name='knownLanguage' onChange={(e) => setKnownLanguage(e.target.value)}>
-            
-            <option value="english">English</option>
-            <option value="hindi">Hindi</option>
-            <option value="french">French</option>
-            <option value="mandarin">Mandarin</option>
-            </select></label>
-            <p></p>
-            <label> Unknown Language: 
-            <select name='unknownLanguage' onChange={(e) => setUnknownLanguage(e.target.value)}>
-            
-            <option value="english">English</option>
-            <option value="hindi">Hindi</option>
-            <option value="french">French</option>
-            <option value="mandarin">Mandarin</option>
-            </select></label>
-            
-            
+
             <div>
               <button>Sign up</button>
             </div>

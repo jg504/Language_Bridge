@@ -11,11 +11,11 @@ export const signup = (user) => {
         dispatch({type: `${authConstanst.USER_LOGIN}_REQUEST`});
 
         auth()
-        .createUserWithEmailAndPassword(user.email, user.password, user.knownLanguage, user.unknownLanguage)
+        .createUserWithEmailAndPassword(user.email, user.password)
         .then(data => {
             console.log(data);
             const currentUser = auth().currentUser;
-            const name = `${user.firstName} ${user.lastName} ${user.knownLanguage} ${user.unknownLanguage}`;
+            const name = `${user.firstName} ${user.lastName}`;
             currentUser.updateProfile({
                 displayName: name
             })
@@ -26,8 +26,6 @@ export const signup = (user) => {
                 .set({
                     firstName: user.firstName,
                     lastName: user.lastName,
-                    knownLanguage: user.knownLanguage,
-                    unknownLanguage: user.unknownLanguage,
                     uid: data.user.uid,
                     createdAt: new Date(),
                     isOnline: true
@@ -37,8 +35,6 @@ export const signup = (user) => {
                     const loggedInUser = {
                         firstName: user.firstName,
                         lastName: user.lastName,
-                        knownLanguage: user.knownLanguage,
-                        unknownLanguage: user.unknownLanguage,
                         uid: data.user.uid,
                         email: user.email
                     }

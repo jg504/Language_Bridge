@@ -7,18 +7,17 @@ import firebase from 'firebase';
 import { Provider } from 'react-redux';
 import store from './store';
 
-// Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDaPzzOHazOsQ3tIUopXkxNx-kO4wTCU1s",
-    authDomain: "language-bridge-5d49e.firebaseapp.com",
-    projectId: "language-bridge-5d49e",
-    storageBucket: "language-bridge-5d49e.appspot.com",
-    messagingSenderId: "588200437720",
-    appId: "1:588200437720:web:47b616d816e75a43ea34ad",
-    measurementId: "G-C45VN1SNS6"
-  };
 
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCeOlsw7DTG1LsyhNkjB8HsoFRJviu41Sc",
+  authDomain: "language-bridge-4ebec.firebaseapp.com",
+  projectId: "language-bridge-4ebec",
+  storageBucket: "language-bridge-4ebec.appspot.com",
+  messagingSenderId: "258423067732",
+  appId: "1:258423067732:web:4deef4d95c0a92e3e549c1",
+  measurementId: "G-8QELQ1VZ6M"
+};
 
 
 firebase.initializeApp(firebaseConfig);
