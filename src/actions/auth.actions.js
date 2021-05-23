@@ -16,6 +16,8 @@ export const signup = (user) => {
             console.log(data);
             const currentUser = auth().currentUser;
             const name = `${user.firstName} ${user.lastName}`;
+            const language = `${user.knownLanguage} ${user.unknownLaguage}`;
+            
             currentUser.updateProfile({
                 displayName: name
             })
@@ -26,6 +28,8 @@ export const signup = (user) => {
                 .set({
                     firstName: user.firstName,
                     lastName: user.lastName,
+                    knownLanguage: data.user.knownLanguage,
+                    unknownLaguage: data.user.unknownLaguage,
                     uid: data.user.uid,
                     createdAt: new Date(),
                     isOnline: true
@@ -35,6 +39,8 @@ export const signup = (user) => {
                     const loggedInUser = {
                         firstName: user.firstName,
                         lastName: user.lastName,
+                        knownLangage: user.knownLangage,
+                        unknownLaguage: user.unknownLaguage,
                         uid: data.user.uid,
                         email: user.email
                     }
@@ -84,10 +90,13 @@ export const signin = (user) => {
                 const name = data.user.displayName.split(" ");
                 const firstName = name[0];
                 const lastName = name[1];
+                
 
                 const loggedInUser = {
                     firstName,
                     lastName,
+                    knownLanguage: data.user.knownLangage,
+                    unknownLaguage: data.user.unknownLaguage, 
                     uid: data.user.uid,
                     email: data.user.email
                 }

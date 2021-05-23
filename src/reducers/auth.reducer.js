@@ -4,6 +4,8 @@ const initState = {
     firstName: '',
     lastName: '',
     email: '',
+    knownLanguage: '',
+    unknownLanguage: '',
     authenticating: false,
     authenticated: false,
     error: null
