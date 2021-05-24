@@ -10,13 +10,13 @@ import store from './store';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCeOlsw7DTG1LsyhNkjB8HsoFRJviu41Sc",
-  authDomain: "language-bridge-4ebec.firebaseapp.com",
-  projectId: "language-bridge-4ebec",
-  storageBucket: "language-bridge-4ebec.appspot.com",
-  messagingSenderId: "258423067732",
-  appId: "1:258423067732:web:4deef4d95c0a92e3e549c1",
-  measurementId: "G-8QELQ1VZ6M"
+  apiKey: "AIzaSyAb1O1_62-m4kjxQGPmfQGjaI3h13Xs8sc",
+  authDomain: "react-chat-app-b848f.firebaseapp.com",
+  databaseURL: "https://react-chat-app-b848f.firebaseio.com",
+  projectId: "react-chat-app-b848f",
+  storageBucket: "react-chat-app-b848f.appspot.com",
+  messagingSenderId: "435114098020",
+  appId: "1:435114098020:web:6cc711f9065856434c0e71"
 };
 
 

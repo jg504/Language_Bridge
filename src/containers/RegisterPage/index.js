@@ -1,45 +1,41 @@
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import Layout from '../../components/Layout';
 import Card from '../../components/UI/Card';
 import { signup } from '../../actions';
-import { useDispatch, useSelector } from 'react-redux';
-import { Redirect } from 'react-router-dom';
 
 /**
 * @author
 * @function RegisterPage
-**/
+* */
 
 const RegisterPage = (props) => {
-
-
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
+  const [known, setKnown] = useState('');
+  const [unknown, setUnknown] = useState('');
+  const [interests, setinterests] = useState('');
   const [password, setPassword] = useState('');
-  const [knownLangage, setKnownLanguage]= useState('');
-  const [unknownLanguage, setUnknownLanguage] = useState('');
   const dispatch = useDispatch();
-  const auth = useSelector(state => state.auth);
-
+  const auth = useSelector((state) => state.auth);
 
   const registerUser = (e) => {
-    
     e.preventDefault();
 
     const user = {
-      firstName, lastName, email, password, knownLangage, unknownLanguage
-    }
-    
-    dispatch(signup(user))
+      firstName, lastName, email, password, known, unknown, interests,
+    };
+
+    dispatch(signup(user));
+  };
+
+  if (auth.authenticated) {
+    return <Redirect to="/" />;
   }
 
-
-  if(auth.authenticated){
-    return <Redirect to={`/`} />
-  }
-
-  return(
+  return (
     <Layout>
       <div className="registerContainer">
         <Card>
@@ -47,7 +43,7 @@ const RegisterPage = (props) => {
 
             <h3>Sign up</h3>
 
-          <input 
+            <input
               name="firstName"
               type="text"
               value={firstName}
@@ -55,7 +51,7 @@ const RegisterPage = (props) => {
               placeholder="First Name"
             />
 
-            <input 
+            <input
               name="lastName"
               type="text"
               value={lastName}
@@ -63,7 +59,7 @@ const RegisterPage = (props) => {
               placeholder="Last Name"
             />
 
-            <input 
+            <input
               name="email"
               type="text"
               value={email}
@@ -71,7 +67,7 @@ const RegisterPage = (props) => {
               placeholder="Email"
             />
 
-            <input 
+            <input
               name="password"
               type="password"
               value={password}
@@ -79,35 +75,39 @@ const RegisterPage = (props) => {
               placeholder="Password"
             />
 
-            <input 
-              name="knownLanguage"
+            <input
+              name="knownL"
               type="text"
-              value={knownLangage}
-              onChange={(e) => setKnownLanguage(e.target.value)}
-              placeholder="Known Language"
+              value={known}
+              onChange={(e) => setKnown(e.target.value)}
+              placeholder="Known languages"
             />
-              
-              <input 
-              name="unknownLanguage"
+
+            <input
+              name="unknownL"
               type="text"
-              value={unknownLanguage}
-              onChange={(e) => setUnknownLanguage(e.target.value)}
-              placeholder="Unknown Language"
+              value={unknown}
+              onChange={(e) => setUnknown(e.target.value)}
+              placeholder="Unknown languages"
             />
-            
-            
+
+            <input
+              name="interests"
+              type="text"
+              value={interests}
+              onChange={(e) => setinterests(e.target.value)}
+              placeholder="Interests"
+            />
+
             <div>
               <button>Sign up</button>
             </div>
-
-
 
           </form>
         </Card>
       </div>
     </Layout>
-   )
+  );
+};
 
- }
-
-export default RegisterPage
+export default RegisterPage;

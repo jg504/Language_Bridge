@@ -4,11 +4,12 @@ const initState = {
     firstName: '',
     lastName: '',
     email: '',
-    knownLanguage: '',
-    unknownLanguage: '',
     authenticating: false,
     authenticated: false,
-    error: null
+    error: null,
+    interests: [],
+    known: [],
+    unknown: [],
 }
 
 export default (state = initState, action) => {
