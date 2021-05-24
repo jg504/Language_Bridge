@@ -176,7 +176,7 @@ const HomePage = () => {
           <div className="messageSections">
             {
                   chatStarted
-                    ? user.conversations.filter(
+                    ? user.conversations && user.conversations.filter(
                       (c) => c.user_uid_1 === (auth && userUid)
                       || c.user_uid_2 === (auth && userUid),
                     ).map((con) => (
