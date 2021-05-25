@@ -96,7 +96,7 @@ const LoginPage = (props) => {
 
 
             <div className="footer">
-              <button type="button" className="btn">
+              <button type="submit" className="btn">
                 Login</button>
             </div>
 

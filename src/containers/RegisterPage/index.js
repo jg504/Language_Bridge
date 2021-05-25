@@ -114,7 +114,7 @@ const RegisterPage = (props) => {
               Already have an account? <NavLink to={'/login'}>Log in</NavLink>
             </div>
             <div className="footer">
-              <button type="button" >Sign up</button>
+              <button type="submit" >Sign up</button>
             </div>
 
           </form>
