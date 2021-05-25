@@ -22,13 +22,19 @@ const Header = (props) => {
     <header className="header">
         <div style={{display: 'flex'}}>
           <div className="logo">Language Bridge</div>
-            
+          {
+              !auth.authenticated ? 
+              <ul className="leftMenu">
+                <li><NavLink to={'/login'}>Login</NavLink></li>
+                <li><NavLink to={'/signup'}>Sign up</NavLink></li>
+              </ul> : null
+            }
               
 
             
         </div>
           <div style={{margin: '20px 0', color: '#fff', fontWeight: 'bold'}}>
-            {auth.authenticated ? `Hi ${auth.firstName} ${auth.lastName}` : ''}
+            {auth.authenticated ? `Welcome ${auth.firstName} ${auth.lastName}` : ''}
           </div>
         <ul className="menu">
 

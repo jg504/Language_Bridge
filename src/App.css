@@ -5,6 +5,9 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
+  background: #4193ff;
+	background: -webkit-linear-gradient(to right, #2bceff, #6098e2);
+	background: linear-gradient(to right, #4ba5ee, #62f0f5);
 }
 
 ul{

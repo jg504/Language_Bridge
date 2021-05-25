@@ -6,6 +6,7 @@ import './style.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { NavLink, Link } from 'react-router-dom';
+
 /**
 * @author
 * @function LoginPage
@@ -55,8 +56,8 @@ const LoginPage = (props) => {
 
 
   return(
-    <Layout>
-      
+    
+      <Layout>
       <div className="base-container">
         <div className="content">
                 
@@ -68,7 +69,7 @@ const LoginPage = (props) => {
         
           <form onSubmit={userLogin}>
           <div className="form-group">
-            <label>Email</label>
+            
             <input 
               name="email"
               type="text"
@@ -78,7 +79,7 @@ const LoginPage = (props) => {
             />
             </div>
             <div className="form-group">
-          <label>Password</label>
+          
             <input 
               name="password"
               type="password"
@@ -101,9 +102,11 @@ const LoginPage = (props) => {
 
           </form>
         </Card>
+        
       </div>
       </div></div>
-    </Layout>
+      </Layout>
+    
    )
 
  }
