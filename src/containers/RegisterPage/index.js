@@ -4,6 +4,7 @@ import { Redirect } from 'react-router-dom';
 import Layout from '../../components/Layout';
 import Card from '../../components/UI/Card';
 import { signup } from '../../actions';
+import { NavLink, Link } from 'react-router-dom';
 
 /**
 * @author
@@ -37,12 +38,15 @@ const RegisterPage = (props) => {
 
   return (
     <Layout>
-      <div className="registerContainer">
+      <div className="base-container">
+      <div className="content">
+                
+                <div className="form">
         <Card>
           <form onSubmit={registerUser}>
 
-            <h3>Sign up</h3>
-
+            <div className="heading">Sign Up</div>
+            <div className="form-group">
             <input
               name="firstName"
               type="text"
@@ -50,7 +54,8 @@ const RegisterPage = (props) => {
               onChange={(e) => setFirstName(e.target.value)}
               placeholder="First Name"
             />
-
+            </div>
+            <div className="form-group">
             <input
               name="lastName"
               type="text"
@@ -58,7 +63,8 @@ const RegisterPage = (props) => {
               onChange={(e) => setLastName(e.target.value)}
               placeholder="Last Name"
             />
-
+            </div>
+            <div className="form-group">
             <input
               name="email"
               type="text"
@@ -66,7 +72,8 @@ const RegisterPage = (props) => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
             />
-
+            </div>
+            <div className="form-group">
             <input
               name="password"
               type="password"
@@ -74,7 +81,8 @@ const RegisterPage = (props) => {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
             />
-
+            </div>
+            <div className="form-group">
             <input
               name="knownL"
               type="text"
@@ -82,7 +90,8 @@ const RegisterPage = (props) => {
               onChange={(e) => setKnown(e.target.value)}
               placeholder="Known languages"
             />
-
+            </div>
+            <div className="form-group">
             <input
               name="unknownL"
               type="text"
@@ -90,7 +99,8 @@ const RegisterPage = (props) => {
               onChange={(e) => setUnknown(e.target.value)}
               placeholder="Unknown languages"
             />
-
+            </div>
+            <div className="form-group">
             <input
               name="interests"
               type="text"
@@ -98,13 +108,19 @@ const RegisterPage = (props) => {
               onChange={(e) => setinterests(e.target.value)}
               placeholder="Interests"
             />
+</div>
+<div className="form-group">
 
-            <div>
-              <button>Sign up</button>
+              Already have an account? <NavLink to={'/login'}>Log in</NavLink>
+            </div>
+            <div className="footer">
+              <button type="button" className="btn">Sign up</button>
             </div>
 
           </form>
         </Card>
+        </div>
+        </div>
       </div>
     </Layout>
   );

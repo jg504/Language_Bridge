@@ -5,7 +5,7 @@ import { signin, isLoggedInUser } from '../../actions';
 import './style.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-
+import { NavLink, Link } from 'react-router-dom';
 /**
 * @author
 * @function LoginPage
@@ -56,10 +56,19 @@ const LoginPage = (props) => {
 
   return(
     <Layout>
-      <div className="loginContainer">
-        <Card>
-          <form onSubmit={userLogin}>
+      
+      <div className="base-container">
+        <div className="content">
+                
+      <div className="form">
             
+        <Card>
+        
+        <div className="heading"> Log In </div>
+        
+          <form onSubmit={userLogin}>
+          <div className="form-group">
+            <label>Email</label>
             <input 
               name="email"
               type="text"
@@ -67,23 +76,33 @@ const LoginPage = (props) => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
             />
-
+            </div>
+            <div className="form-group">
+          <label>Password</label>
             <input 
               name="password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Password"
-            />
+            /></div>
+             
+             
+            <div className="form-group">
+
+              Don't have an account? <NavLink to={'/signup'}>Sign up</NavLink>
+            </div>
 
 
-            <div>
-              <button>Login</button>
+            <div className="footer">
+              <button type="button" className="btn">
+                Login</button>
             </div>
 
           </form>
         </Card>
       </div>
+      </div></div>
     </Layout>
    )
 
