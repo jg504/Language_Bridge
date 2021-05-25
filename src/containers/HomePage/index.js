@@ -16,7 +16,7 @@ const User = (props) => {
   return (
     <div onClick={() => onClick(user)} className="displayName">
       <div className="displayPic">
-        <img src="https://i.pinimg.com/originals/be/ac/96/beac96b8e13d2198fd4bb1d5ef56cdcf.jpg" alt="" />
+        <img src="https://i.pinimg.com/originals/40/04/f5/4004f55d7bf926153ea5bd2b565b3133.jpg" alt="" />
       </div>
       <div style={{
         display: 'flex', flex: 1, justifyContent: 'space-between', margin: '0 10px',
@@ -108,7 +108,7 @@ const HomePage = () => {
       return newUsers.filter((u) => {
         let i = 0;
         auth.unknown.forEach((lang) => {
-          if (u.known.includes(lang)) i += 1;
+          if (u.known.reduce((prev, curr) => (prev || curr.toLowerCase() === lang.toLowerCase()), false)) i += 1;
         });
         if (i > 0) return true;
         return false;
@@ -116,8 +116,8 @@ const HomePage = () => {
         let ai = 0;
         let bi = 0;
         auth.interests.forEach((inter) => {
-          if (a.interests.includes(inter)) ai += 1;
-          if (b.interests.includes(inter)) bi += 1;
+          if (a.interests.reduce((prev, curr) => (prev || curr.toLowerCase() === inter.toLowerCase()), false)) ai += 1;
+          if (b.interests.reduce((prev, curr) => (prev || curr.toLowerCase() === inter.toLowerCase()), false)) bi += 1;
         });
         return bi - ai;
       })[0];
@@ -127,8 +127,12 @@ const HomePage = () => {
 
   const newConversation = () => {
     const newuser = selectNewContact();
+    console.log({newuser});
 
-    if (!newuser) return;
+    if (!newuser) {
+      alert('No match found :(');
+      return;
+    }
 
     const msgObj = {
       user_uid_1: auth.uid,
