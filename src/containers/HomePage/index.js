@@ -15,8 +15,8 @@ const User = (props) => {
 
   return (
     <div onClick={() => onClick(user)} className="displayName">
-      <div className="displayPic">
-        <img src="https://i.pinimg.com/originals/40/04/f5/4004f55d7bf926153ea5bd2b565b3133.jpg" alt="" />
+      <div className="profileImage" >
+      {user.firstName.charAt(0)}
       </div>
       <div style={{
         display: 'flex', flex: 1, justifyContent: 'space-between', margin: '0 10px',
@@ -155,7 +155,7 @@ const HomePage = () => {
         <div className="listOfUsers">
           
           <div style={{ padding: '10px' }}>
-            <button onClick={newConversation}>New conversation</button>
+            <button style ={{alignSelf:"center"}}onClick={newConversation}>New conversation</button>
           </div>
 
           {
