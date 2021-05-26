@@ -37,7 +37,7 @@ html {
     position: relative;
    
   border-radius: 10px;
-  background: linear-gradient(to bottom right, #79c7c5 40%, #F9FBFF 100%);
+  background: linear-gradient(to top right, #79c7c5 40%, #F9FBFF 100%);
 
   border-left: #F9FBFF 20px;
     
@@ -76,6 +76,8 @@ html {
     background-color: #ccc;
     border-radius: 15px ;
     padding: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -167,6 +169,9 @@ button {
 
     border-radius: 20px;
     margin-left: 2px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+
 border: 1px solid #3498db;
 background-color: #3498db;
 font-size: 12px;
