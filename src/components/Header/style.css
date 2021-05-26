@@ -6,6 +6,7 @@
     background: #56baed;
     justify-content: space-between;
     box-sizing: border-box;
+    
 }
 
 .logo{
@@ -33,6 +34,7 @@
     display: flex; 
     color: #fff; 
     margin: 20px;
+    
 }
 
 .leftMenu > li{

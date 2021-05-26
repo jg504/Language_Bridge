@@ -1,3 +1,17 @@
+
+
+html {
+    display: grid;
+    min-height: 100%;
+  }
+  
+  body {
+    display: grid;
+    background: linear-gradient(to bottom left, #79c7c5 40%, #F9FBFF 100%);
+    font-family: 'Lato', sans-serif;
+  }
+
+
 .container{
     display: flex;
     position: absolute;
@@ -9,25 +23,43 @@
     width: 30%;
     height: 100%;
     overflow-x: hidden;
-    border-right: 1px solid #ccc;
+    color: #777777;
+    
+    background: rgba(255, 255, 255, 0.1);
+    
+ 
 }
 .chatArea{
     width: 70%;
     height: 100%;
     overflow-x: hidden;
     position: relative;
+   
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(#777777, 0.5);
+    
     
 }
 .chatHeader{
     position: fixed;
     width: 70%;
     height: 40px;
-    background: #3498db;
+    
     text-align: center;
     line-height: 40px;
-    color: #054457;
-    font-weight: bold;
-    font-family: "Open Sans", sans-serif;
+    
+    
+    font-family: "Lato", sans-serif;
+    
+  text-transform: uppercase;
+  color: #777777;
+  font-size: .8em;
+  letter-spacing: 2px;
+  font-weight: 500;
+  
+  
+  background: #F9FBFF;
+  border-radius: 10px 10px 0 0;
 }
 .chatControls{
     display: flex;
@@ -50,6 +82,7 @@
     padding: 5px 10px;
     box-sizing: border-box;
     cursor: pointer;
+    cursor: pointer;
 }
 
 .displayName.active{
@@ -71,12 +104,42 @@
 
 .messageStyle{
     background: skyblue;
-    display: inline-block;
+    
     padding: 5px 10px;
     border-radius: 10px;
     margin: 5px;
     display: inline-block;
+
+    
+  background: #F9FBFF;
+  opacity: 0.5;
+  
+  height: 70%;
+  top: 2.5%;
+  left: 5%;
+  
+  box-shadow: -5px 5px 10px rgba(#7777, .5);
+    
 }
+textarea{
+    background: rgba(255, 255, 255, 0.03);
+}
+
+textarea {
+  
+  border: 0;
+  top: 13px;
+  background: #F9FBFF;
+  color: #79c7c5;
+}
+
+input::placeholder {
+  color: #a1e2d9;
+}
+
+
+
+
 
 .messageSections{
     height: calc(100% - 90px);
@@ -98,7 +161,7 @@
     background: green;
     box-shadow: 0 0 0 0;
 }
-utton {
+button {
            
         
         
@@ -106,12 +169,12 @@ utton {
         
     cursor: pointer;
 
-
+    color: #a1e2d9;
 
     border-radius: 20px;
+    margin-left: 2px;
 border: 1px solid #3498db;
 background-color: #3498db;
-color: #FFFFFF;
 font-size: 12px;
 font-weight: bold;
 padding: 12px 45px;
@@ -119,6 +182,7 @@ letter-spacing: 1px;
 text-transform: uppercase;
 transition: transform 80ms ease-in;
 }
+
 
 button:active {
   transform: scale(0.95);
@@ -128,7 +192,3 @@ button:focus {
   outline: none;
 }
 
-button.ghost {
-  background-color: transparent;
-  border-color: #FFFFFF;
-}

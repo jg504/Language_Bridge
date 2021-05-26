@@ -151,8 +151,9 @@ const HomePage = () => {
   return (
     <Layout>
       <section className="container">
-
+      
         <div className="listOfUsers">
+          
           <div style={{ padding: '10px' }}>
             <button onClick={newConversation}>New conversation</button>
           </div>
@@ -195,11 +196,11 @@ const HomePage = () => {
           {
               chatStarted
                 ? (
-                  <div className="chatControls">
+                  <div className="chatControls" >
                     <textarea
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      placeholder="Write Message"
+                      placeholder="Type a Message"
                     />
                     <button onClick={submitMessage}>Send</button>
                   </div>
